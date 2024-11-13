@@ -1,0 +1,39 @@
+*,*::after,*::before{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --yellow:#FFCD1E;
+    --blue1:#06B6D4;
+    --blue2:#67E8F9;
+    --pink:#DB2777;
+    --rose:#F472B6;
+    --green:#16A34A;
+
+    --black:#000;
+    --white:#FAFAFA;
+
+    
+}
+
+html,button{
+    font: 500 1rem/1.5 "Montserrat", sans-serif;
+
+}
+
+h1,h2{
+    font-family: 'Syne',sans-serif;
+}
+h1{
+    font-size: 4rem;
+    line-height: 1.25;
+}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 1.2;
+
+}
