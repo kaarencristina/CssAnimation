@@ -86,7 +86,7 @@ section.hero{
 
 @keyframes starTwinkle {
     0%, 100% {
-      opacity: 0.8;
+      opacity: 0.4;
     }
     50% {
       opacity: 1;
@@ -110,13 +110,13 @@ section.hero{
       transform: translateY(0) rotate(0deg);
     }
     25% {
-      transform: translateY(-10px) rotate(5deg);
+      transform: translateY(-20px) rotate(20deg);
     }
     50% {
       transform: translateY(0) rotate(0deg);
     }
     75% {
-      transform: translateY(10px) rotate(-5deg);
+      transform: translateY(20px) rotate(-10deg);
     }
     100% {
       transform: translateY(0) rotate(0deg);
