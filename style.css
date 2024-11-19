@@ -204,3 +204,130 @@ h1 span{
         transform: translateY(-15rem);
     }
 }
+
+
+.banner{
+  width: 100%;
+  padding-block:2.5rem ;
+  overflow: hidden;
+
+
+  .scroller{
+    width: 100%;
+    overflow: hidden;
+    padding-block: 1rem;
+  }
+
+  .rolling{
+    display: flex;
+    gap: 1.5rem;
+
+    animation: rolling 2s infinite;
+  }
+  .bg-gradient-animate {
+    background: linear-gradient(45deg, var(--blue2), var(--pink));
+
+    background-size: 400%;
+    background-position: 0 50%;
+    animation: bg-gradient 20s ease infinite;
+  }
+  
+
+
+}
+@keyframes bg-gradient {
+50%{
+  background-position: 100% 50%;
+}
+  
+}
+
+@keyframes rolling {
+  to{
+    transform: translateX(-132px);
+  }
+}
+
+section.gallery{
+  width: 100%;
+  max-width: 80rem;
+  padding: 2.5rem 2rem;
+  margin-inline:auto ;
+
+}
+
+.header2 {
+  text-align: center;
+}
+
+.header2 span {
+  font: 500 0.875rem/1.5 "Montserrat", sans-serif; /* Peso corrigido */
+}
+
+.header2 img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-areas: 
+    "A B B"
+    "C C D";
+  gap: 2.5rem;
+}
+
+
+figure{
+  border-radius: 2.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.imgs {
+  height: 25rem;
+  object-fit: cover;
+  transition: transform 500ms ease; 
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+}
+
+figcaption{
+  transform: translateY(0);
+}
+
+figure:nth-child(1){
+  grid-area: A;
+}
+
+figure:nth-child(2){
+  grid-area: B;
+}
+
+figure:nth-child(3){
+  grid-area: C;
+}
+
+figure:nth-child(4){
+  grid-area: D;
+}
+figcaption {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(to top rgb(0 0 0 /0.64),
+  rgb(0 0 0 /0));
+}
+
+figcaption img {
+  width: 2rem;
+}
