@@ -283,6 +283,8 @@ figure{
   border-radius: 2.5rem;
   overflow: hidden;
   position: relative;
+ 
+
 }
 
 .imgs {
@@ -331,3 +333,5 @@ figcaption {
 figcaption img {
   width: 2rem;
 }
+
+
